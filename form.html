@@ -2,14 +2,15 @@
 <html>
 <head>
 <title>Creating a form in HTML</title>
+<script src="email.js"></script>
 </head>
 <body>
-<form action="Sample.html" method="POST">
+
 <fieldset>
 <legend>Personal Details</legend>
 First Name: <input type="text" id="f.name" name="first name" placeholder="First name">
 Last Name: <input type="text" id="l.name" name="last name" placeholder="last name"><br>
-E-mail: <input type="email" name="e-mail">
+E-mail: <input type="email" name="email" id="email" value="yourEmail1">
 Password: <input type="password" name="pwd">
 <input type="checkbox" name="password" ><br>
 Numbers Only:<input type="number" name="numbonly" min="1" max="20">
@@ -35,8 +36,8 @@ Select a country:<select name="country" id="country">
 This is the text area where we write multiple statements.
 	
 </textarea>
-<input type="submit" value="submit">
-</form>
+<input type="submit" onclick="validateEmail()">
+
 
 </body>
 </html>

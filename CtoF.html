@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>calculation of Celsious to Fohrenheit</h1>
+<form>
+<div>
+<input type="text" size="15" name="celsius"> <strong>DegreesCelsius</strong>
+<input type="button" value=" = " onclick="temp(this.form)"> 
+<input type="text" size="15" name="fahrenheit"> <strong>Degrees Fahrenheit</strong> </p>
+</div>
+</form>
+<script type="text/javascript">
+	function temp (form) { 
+  form.fahrenheit.value = form.celsius.value*1.8+32;
+}
+</script>
+
+</body>
+</html> 

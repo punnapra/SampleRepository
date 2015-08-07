@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counting Vowels</title>
+</head>
+<body>
+  <h1>Vowel Counting</h1>
+  
+    Count:<span id="count">0</span>
+    <div>
+    <input onKeyup="update(this.value)" placeholder="Type some text here"> 
+    </div>
+    
+    <script type="text/javascript">
+        
+        function update( text ) {
+            document.getElementById('count').innerHTML = vowels(text);  
+        }
+        
+        function vowels( text ) {
+            return text.split(/[aeiou]/gi).length - 1;
+  
+        }
+        
+    </script>
+    
+</body>
+</html> 
